@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "e2e-test-1"
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
