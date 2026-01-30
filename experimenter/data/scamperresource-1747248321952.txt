@@ -1,0 +1,16 @@
+ping from 172.16.13.12 to 8.8.8.8: 84 byte packets
+84 bytes from 8.8.8.8, seq=0 ttl=116 time=23.011 ms
+84 bytes from 8.8.8.8, seq=1 ttl=116 time=25.573 ms
+84 bytes from 8.8.8.8, seq=2 ttl=116 time=24.237 ms
+84 bytes from 8.8.8.8, seq=3 ttl=116 time=24.217 ms
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 packets received, 0% packet loss
+round-trip min/avg/max/stddev = 23.011/24.259/25.573/0.906 ms
+ping from 172.16.13.12 to 8.8.4.4: 84 byte packets
+84 bytes from 8.8.4.4, seq=0 ttl=118 time=23.234 ms
+84 bytes from 8.8.4.4, seq=1 ttl=118 time=23.505 ms
+84 bytes from 8.8.4.4, seq=2 ttl=118 time=23.216 ms
+84 bytes from 8.8.4.4, seq=3 ttl=118 time=23.858 ms
+--- 8.8.4.4 ping statistics ---
+4 packets transmitted, 4 packets received, 0% packet loss
+round-trip min/avg/max/stddev = 23.216/23.453/23.858/0.260 ms
