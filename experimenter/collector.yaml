@@ -1,0 +1,26 @@
+metadata:
+  name: collector
+  port: 9090
+  description: "This is a collector that queries and gather data for Traffic Manager and Clickhouse. To TM is supports built recursively querying based on some conditions on the resulting data. "
+  export_data_path: "data"
+changelog:
+  format: "2006-01-02T15:04:05.999999Z0700"
+  endpoint: "https://main7-pdx01-access-es.cfdata.org/changelog-2*/_search"
+  size:    10000
+  service: "traffic-manager"
+  gte:     "2024-09-15T14:46:20.147Z"
+  lt:      "now"
+clickhouse:
+  service: "clickhouse"
+  columns: "challengeData.id, datetime, accountId, zoneId, challengeData.tags, coloId, metal, clientHintsUserAgent, clientASN, clientIPv4, clientCountry, clientUserAgent, osName, zonePlan, signals.type, signals.id"
+  endpoint: "https://clickhouse-challenges.bi.cfdata.org/"
+  name: "cf_goldilocks"
+  gte: "2024-09-13"
+  limit: "10000"
+scamper:
+  service: "scamper"
+  operation:
+  -
+    name: "ping"
+  -
+    name: "traceroute"
