@@ -1,0 +1,22 @@
+changelog:
+  name: "changelog_fake"
+  format: "json"
+  endpoint: "google.com"
+  size: 100
+  service: "service"
+  gte: "2024-01-01"
+  lt: "2024-12-31"
+
+metadata:
+  name: "service-fake"
+  port: 3000
+  description: "Handles changelog export"
+  export_data_path: "/data/export"
+
+clickhouse:
+  name: "clickhouse_db"
+  columns: "timestamp, service"
+  service: "serving"
+  endpoint: "google.com"
+  gte: "2024-01-01"
+  limit: "1000"
